@@ -24,6 +24,10 @@
       href="https://fonts.googleapis.com/css2?family=Lemon&family=Marcellus&family=Mulish:wght@400;600;700;800&family=Poppins:wght@500&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Justice league</title>
   </head>
@@ -31,12 +35,13 @@
     <header class="header">
       <div class="container">
         <a class="header-logo" href="./index.html"
-          ><span class="header-logo-m">M</span>box</a
+          ><span class="header-logo-m">M</span
+          ><span class="animate__animated animate__bounces">box</span></a
         >
         <nav class="header-nav">
           <ul class="header-nav-menu">
             <li class="header-nav-menu-item">
-              <a class="header-nav-menu-link" href="">Home</a>
+              <a class="header-nav-menu-link current" href="">Home</a>
             </li>
             <li class="header-nav-menu-item">
               <a class="header-nav-menu-link" href="">TV Shows</a>
@@ -49,18 +54,31 @@
             </li>
           </ul>
         </nav>
+        <button class="mobile-menu-btn" type="button">
+          <svg class="mobile-menu-svg" width="36" height="36">
+            <use href="./sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
         <ul class="header-icon-list">
           <li class="header-icon-item">
-            <p class="heaedr-icon-text">icon</p>
+            <svg class="header-icon-text" width="20" height="20">
+              <use href="/sprite.svg#icon-search"></use>
+            </svg>
           </li>
           <li class="header-icon-item">
-            <p class="heaedr-icon-text">icon</p>
+            <svg class="header-icon-text" width="20" height="20">
+              <use href="/sprite.svg#icon-bell"></use>
+            </svg>
           </li>
           <li class="header-icon-item">
-            <p class="heaedr-icon-text">icon</p>
+            <svg class="header-icon-text" width="20" height="20">
+              <use href="/sprite.svg#icon-user"></use>
+            </svg>
           </li>
         </ul>
       </div>
     </header>
   </body>
+
+  <!-- <script src="script.js" defer></script> -->
 </html>
